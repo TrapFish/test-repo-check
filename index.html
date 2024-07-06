@@ -11,62 +11,23 @@
 <body>
 
     <div>
-        <div id="container">
-            <div id="purple">Purple</div>
-            <div id="green">Green</div>
-            <div id="blue">Blue</div>
+        <!-- <div class="container" style="background: rgba(0, 0, 0, 0.8)">
+            <div class="box slate" style="position: relative">Slate</div>
+            <div class="box yellow" style="display: inline-block">Yellow</div>
+            <div class="box lime" style="float: left">Lime</div>
+            <div class="box green" style="">Green</div>
+            <div class="box cyan" style="position: relative; z-index: -1">Cyan</div>
+        </div> -->
+        <div class="container" style="background: rgba(0, 0, 0, 0.8)">
+            <div class="box slate" style="position: relative">Slate</div>
+            <div class="box yellow" style="">Yellow</div>
+            <div class="box lime" style="position: relative">Lime</div>
+            <div class="box cyan" style="">Cyan</div>
         </div>
     </div>
 </body>
 <style>
-    #container {
-        display: relative;
-    }
 
-    #container>div:nth-child(1) {
-        margin-top: 50px;
-        margin-left: 50px;
-    }
-
-    #container>div:nth-child(2) {
-        margin-top: -50px;
-        margin-left: 100px;
-    }
-
-    #container>div:nth-child(3) {
-        margin-top: -50px;
-        margin-left: 150px;
-    }
-
-    #blue,
-    #green,
-    #purple {
-        height: 100px;
-        width: 100px;
-        padding: 8px;
-        color: white;
-        border: 4px solid black;
-        border-radius: 4px;
-    }
-
-    #blue {
-        background: #0f2cbd;
-    }
-
-    #green {
-        background: #007a70;
-        position: relative;
-        left: 0px;
-        transition: left 300ms ease-in-out;
-    }
-
-    #green:hover{
-        left: 20px;
-    }
-
-    #purple {
-        background: #5f00b2;
-    }
 </style>
 
 </html>
