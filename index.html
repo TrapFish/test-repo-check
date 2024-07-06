@@ -13,17 +13,29 @@
     <div>
         <div id="container">
             <div id="purple">Purple</div>
-            <!-- <div id="blue">Blue</div> -->
             <div id="green">Green</div>
-            <!-- <div id="purple">Purple</div> -->
             <div id="blue">Blue</div>
         </div>
     </div>
 </body>
 <style>
     #container {
-        /* //display: relative; */
-        position: relative;
+        display: relative;
+    }
+
+    #container>div:nth-child(1) {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+
+    #container>div:nth-child(2) {
+        margin-top: -50px;
+        margin-left: 100px;
+    }
+
+    #container>div:nth-child(3) {
+        margin-top: -50px;
+        margin-left: 150px;
     }
 
     #blue,
@@ -31,7 +43,6 @@
     #purple {
         height: 100px;
         width: 100px;
-        position: absolute;
         padding: 8px;
         color: white;
         border: 4px solid black;
@@ -40,20 +51,21 @@
 
     #blue {
         background: #0f2cbd;
-        left: 50px;
-        top: 50px;
     }
 
     #green {
         background: #007a70;
-        left: 100px;
-        top: 100px;
+        position: relative;
+        left: 0px;
+        transition: left 300ms ease-in-out;
+    }
+
+    #green:hover{
+        left: 20px;
     }
 
     #purple {
         background: #5f00b2;
-        left: 150px;
-        top: 150px;
     }
 </style>
 

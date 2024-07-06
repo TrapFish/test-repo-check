@@ -178,3 +178,28 @@ console.log("Largest sum contiguous subarray:", largestSumContiguousSubarray(arr
     }
 </style>
 =====================================================================
+
+
+Understanding more rules of Painting Order
+
+While relative positioning is one way that you can tell the browser to paint an element first, it's far from the only way to do so. Here's a list of CSS rules that will change the order an element paints in, from the lowest priority to the highest priority:
+
+The background of the following tags: html, :root, body
+
+The background of the stacking context root element----Come back to this at the end of the article; it won't make sense now.
+
+Positioned elements with a negative z-index
+
+Non-positioned elements' background
+
+Elements with a float style applied without a position applied
+
+Non-positioned inline elements
+
+The text contents of non-positioned, non-floating elements, as well as a few other rules
+
+Positioned elements without a z-index applied or with a z-index of 0, as well as a few other rules
+
+Elements with a z-index of 1 or more
+
+Depending on your browser, outlines
