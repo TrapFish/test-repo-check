@@ -61,3 +61,120 @@
 
 
 
+function largestSumContiguousSubarray(arr) {
+    // Initialize variables to store the maximum sum found so far and the current sum
+    let maxSoFar = arr[0];
+    let maxEndingHere = arr[0];
+
+    // Loop through the array starting from the second element
+    for (let i = 1; i < arr.length; i++) {
+        // Update the current sum, choosing the maximum between the current element and the current sum plus the current element
+        maxEndingHere = Math.max(arr[i], maxEndingHere + arr[i]);
+        // Update the maximum sum found so far if the current sum is greater
+        maxSoFar = Math.max(maxSoFar, maxEndingHere);
+    }
+
+    return [maxSoFar, maxEndingHere];
+}
+
+// Example usage
+const arr = [-2, -3, 4, -1, -2, 1, 5, -3];
+console.log("Largest sum contiguous subarray:", largestSumContiguousSubarray(arr)); // Output: 7
+==============================================================================================
+
+
+    <div>
+        <div id="body" style="min-height: 50vh">
+            <p>This is some text, pretend it's an app back here</p>
+        </div>
+        <div id="modal-container">
+            <div id="modal">This is a modal</div>
+        </div>
+        <footer style="min-height: 50vh">App Name</footer>
+    </div>
+</body>
+<style>
+    #modal-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    #modal {
+        background: white;
+        border: 1px solid black;
+        padding: 1rem;
+        border-radius: 1rem;
+    }
+
+    footer {
+        position: relative;
+        background: lightblue;
+        padding: 1rem;
+    }
+</style>
+==================================================================================
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <div id="container">
+            <div id="purple">Purple</div>
+            <!-- <div id="blue">Blue</div> -->
+            <div id="green">Green</div>
+            <!-- <div id="purple">Purple</div> -->
+            <div id="blue">Blue</div>
+        </div>
+    </div>
+</body>
+<style>
+    #container {
+        /* //display: relative; */
+        position: relative;
+    }
+
+    #blue,
+    #green,
+    #purple {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        padding: 8px;
+        color: white;
+        border: 4px solid black;
+        border-radius: 4px;
+    }
+
+    #blue {
+        background: #0f2cbd;
+        left: 50px;
+        top: 50px;
+    }
+
+    #green {
+        background: #007a70;
+        left: 100px;
+        top: 100px;
+    }
+
+    #purple {
+        background: #5f00b2;
+        left: 150px;
+        top: 150px;
+    }
+</style>
+=====================================================================
