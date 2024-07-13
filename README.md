@@ -203,3 +203,29 @@ Positioned elements without a z-index applied or with a z-index of 0, as well as
 Elements with a z-index of 1 or more
 
 Depending on your browser, outlines
+
+
+    <!-- <div class="container" style="background: rgba(0, 0, 0, 0.8)">
+            <div class="box slate" style="position: relative">Slate</div>
+            <div class="box yellow" style="display: inline-block">Yellow</div>
+            <div class="box lime" style="float: left">Lime</div>
+            <div class="box green" style="">Green</div>
+            <div class="box cyan" style="position: relative; z-index: -1">Cyan</div>
+        </div> -->
+    <!-- <div class="container" style="background: rgba(0, 0, 0, 0.8)">
+            <div class="box slate" style="position: relative">Slate</div>
+            <div class="box yellow" style="">Yellow</div>
+            <div class="box lime" style="position: relative">Lime</div>
+            <div class="box cyan" style="">Cyan</div>
+        </div> -->
+    <!-- <div class="container">
+      <div id="top-container" style="position: relative; z-index: 1">
+        <div class="box slate" style="position: relative">Slate</div>
+        <div class="box yellow" style="">Yellow</div>
+      </div>
+      <div id="bottom-container">
+        <div class="box lime" style="position: relative">Lime</div>
+        <div class="box cyan" style="">Cyan</div>
+      </div>
+    </div>
+  </div> -->
